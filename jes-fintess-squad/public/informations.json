@@ -1,0 +1,49 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "name": "Dumbbell",
+        "img": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "details": "Dumbbell exercises are more advanced as they require more stabilisation and activation muscles that might not get used in bilateral exercises,explains MH fitness editor Andrew Tracey.",
+        "age": "20-35",
+        "time": 10
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "name": "Bench Press",
+        "img": "https://www.bestusedgymequipment.com/wp-content/uploads/2020/09/olympic-incline-bench-600x600.jpg",
+        "details": "An incline bench press allows you to move the back support upwards at an angle to target your chest, biceps, and shoulders.",
+        "age": "20-28",
+        "time": 15
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "Arm Curl Machine",
+        "img": "https://www.bestusedgymequipment.com/wp-content/uploads/2020/09/technogym-selection-armcurl-2.jpg",
+        "details": "This machine is best suited to commercial gyms unless you have a large space in your home to fit this machinery.",
+        "age":"20-25",
+        "time": 10
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "Cable Row Machine",
+        "img": "https://www.bestusedgymequipment.com/wp-content/uploads/2021/06/ghd-machine_-glute-ham-developer-300x300.jpeg",
+        "details": "This is a machine that allows you to do compound exercises. When working out, you sit on a padded seat and pull onto handles, which are attached to a cable, and the cable moves the weights.",
+        "age": "20-30",
+        "time": 20
+    },
+    {
+        
+      "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+       "name": "Abdominal Bench",
+       "img": "https://www.bestusedgymequipment.com/wp-content/uploads/2020/09/life-fitness-abdominal-bench-600x600.jpg",
+       "details": "Abs, internal obliques, quadriceps, and transverse abdominal muscles.deltoids, triceps, hamstrings. ",
+       "age": "20-28",
+       "time": 10
+    },
+    {
+        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+        "name": " Ab Roller",
+        "img": "https://www.bestusedgymequipment.com/wp-content/uploads/2021/06/ab-roller-300x300.jpeg",
+        "details": "Abdominals, deltoids, triceps, hamstrings, and lats.When moving the ab roller, make sure you keep your pelvis stable. "
+    }
+]
