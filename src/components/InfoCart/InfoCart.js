@@ -89,8 +89,8 @@ const InfoCart = ({ item }) => {
             <p className="fw-semibold">Break time: </p>
             <p className="fw-semibold">{breakTime} Minutes</p>
           </div>
-          <div>
-            <button onClick={showToastMessage} className="add-cart-btn my-4">
+          <div className="container">
+            <button onClick={showToastMessage} className="add-cart-btn my-4 ">
               Activity Completed
             </button>
             <ToastContainer />

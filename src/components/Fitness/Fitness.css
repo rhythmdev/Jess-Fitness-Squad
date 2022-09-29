@@ -5,10 +5,11 @@
 .add-cart-btn {
   background-color: #5d3fd3;
   border: none;
-  padding: 8px 70px;
+  padding: 5px;
   border-radius: 10px;
   color: aliceblue;
   font-weight: 600;
+  width: 100%;
 }
 .add-cart-btn:hover {
   background-color: #9999fa;
