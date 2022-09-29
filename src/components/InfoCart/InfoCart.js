@@ -3,12 +3,13 @@ import avatar from "../../avatar.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const InfoCart = ({ item }) => {
+  //toast message
   const showToastMessage = () => {
     toast.success("Successfully Completed!", {
       position: toast.POSITION.TOP_RIGHT,
     });
   };
-
+//end of toast message
   let time = 0;
   for (const info of item) {
     time = time + info.time;
@@ -37,7 +38,7 @@ const InfoCart = ({ item }) => {
         <div>
           <h6 className="my-5">Add A break</h6>
           <div className="d-flex justify-content-evenly">
-            <button className="btn bg-white rounded-circle fw-semibold shadow-sm">
+            <button  className="btn bg-white rounded-circle fw-semibold shadow-sm">
               10s
             </button>
             <button className="btn bg-white rounded-circle fw-semibold shadow-sm">
@@ -62,7 +63,7 @@ const InfoCart = ({ item }) => {
             <p className="fw-semibold">Minutes</p>
           </div>
           <div>
-            <button onClick={showToastMessage} className="add-cart-btn mt-4">
+            <button onClick={showToastMessage} className="add-cart-btn my-4">
               Activity Completed
             </button>
             <ToastContainer />
