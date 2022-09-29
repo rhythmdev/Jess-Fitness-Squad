@@ -73,7 +73,7 @@ const InfoCart = ({ item }) => {
             <button
               onClick={(e) => addBreak(e)}
               value={40}
-              className="btn bg-white rounded-circle fw-semibold shadow-sm"
+              className="btn  rounded-circle fw-semibold shadow-sm"
             >
               40s
             </button>
