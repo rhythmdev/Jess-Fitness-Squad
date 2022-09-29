@@ -25,7 +25,7 @@ const Information = () => {
       <div className="col-lg-8">
         <h4 className="mt-4">Select Today's Fitness Track</h4>
         <div className=" mx-4 mt-3">
-          <div className="card-area row row-cols-1 row-cols-md-3 g-4">
+          <div className="card-area row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {informations.map((info) => (
               <Fitness
                 key={info.id}

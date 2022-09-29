@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import avatar from "../../avatar.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const InfoCart = ({ item }) => {
+  const [breakTime, setBreakTime] = useState(0);
   //toast message
   const showToastMessage = () => {
     toast.success("Successfully Completed!", {
       position: toast.POSITION.TOP_RIGHT,
     });
   };
-//end of toast message
+
+  //end of toast message
+  const addBreak = (e) => {
+    setBreakTime(e.target.value);
+    localStorage.setItem("times", JSON.stringify(e.target.value));
+  };
+  useEffect(() => {
+    const getTime = JSON.parse(localStorage.getItem("times"));
+    setBreakTime(getTime);
+  }, []);
+  // console.log(breakTime)
   let time = 0;
   for (const info of item) {
     time = time + info.time;
@@ -38,16 +49,32 @@ const InfoCart = ({ item }) => {
         <div>
           <h6 className="my-5">Add A break</h6>
           <div className="d-flex justify-content-evenly">
-            <button  className="btn bg-white rounded-circle fw-semibold shadow-sm">
-              10s
+            <button
+              onClick={(e) => addBreak(e)}
+              value={10}
+              className="btn bg-white rounded-circle fw-semibold shadow-sm"
+            >
+              10
             </button>
-            <button className="btn bg-white rounded-circle fw-semibold shadow-sm">
+            <button
+              onClick={(e) => addBreak(e)}
+              value={20}
+              className="btn bg-white rounded-circle fw-semibold shadow-sm"
+            >
               20s
             </button>
-            <button className="btn bg-white rounded-circle fw-semibold shadow-sm">
+            <button
+              onClick={(e) => addBreak(e)}
+              value={30}
+              className="btn bg-white rounded-circle fw-semibold shadow-sm"
+            >
               30s
             </button>
-            <button className="btn bg-white rounded-circle fw-semibold shadow-sm">
+            <button
+              onClick={(e) => addBreak(e)}
+              value={40}
+              className="btn bg-white rounded-circle fw-semibold shadow-sm"
+            >
               40s
             </button>
           </div>
@@ -60,7 +87,7 @@ const InfoCart = ({ item }) => {
           </div>
           <div className="d-flex justify-content-evenly align-items-center  shadow-lg mx-5 common-bg mt-5">
             <p className="fw-semibold">Break time: </p>
-            <p className="fw-semibold">Minutes</p>
+            <p className="fw-semibold">{breakTime} Minutes</p>
           </div>
           <div>
             <button onClick={showToastMessage} className="add-cart-btn my-4">
