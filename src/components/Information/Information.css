@@ -1,0 +1,21 @@
+.main{
+    background-color: rgba(231, 246, 255, 0.384);
+}
+.info-area{
+    background-color: rgba(252, 243, 231, 0.473);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    
+}
+.info-area img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ 
+}
+.common-bg{
+    padding-top: 15px;
+    border-radius: 10px;
+    max-height: 80px
+}
