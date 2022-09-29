@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+.header{
+    background-color: #e9ecef;
+    height: 60px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.brand-name{
+    font-family: 'Bungee Spice', cursive;
+    
+    
+}
