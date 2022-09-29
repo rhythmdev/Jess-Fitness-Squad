@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Fitness from "../Fitness/Fitness";
 import "./Information.css";
-import avatar from "../../avatar.png";
+
+import InfoCart from "../InfoCart/InfoCart";
 
 const Information = () => {
   const [informations, setInformations] = useState([]);
+  const [item, setItem] = useState([]);
 
   useEffect(() => {
     fetch("informations.json")
@@ -13,7 +15,9 @@ const Information = () => {
   }, []);
 
   const handelAddToCart = (info) => {
-    console.log(info);
+ 
+    const newItem = [...item, info];
+    setItem(newItem)
   };
   return (
     <div className="row main">
@@ -33,7 +37,8 @@ const Information = () => {
       </div>
       <div className="col-lg-4">
         <div className="info-area shadow-lg">
-          <div className="">
+          <InfoCart item={item}></InfoCart>
+          {/* <div className="">
             <img src={avatar} alt="" className="img-fluid" />
             <h6>John Deo</h6>
           </div>
@@ -71,7 +76,7 @@ const Information = () => {
           <div>
             <h6 className="my-5">Fitness Details</h6>
             <div className="d-flex justify-content-evenly align-items-center  shadow-lg mx-5 common-bg">
-              <p className="fw-semibold">Exercise time: </p>
+              <p className="fw-semibold">Exercise time: {item.length}</p>
               <p className="fw-semibold">Minutes</p>
             </div>
             <div className="d-flex justify-content-evenly align-items-center  shadow-lg mx-5 common-bg mt-5">
@@ -81,7 +86,7 @@ const Information = () => {
             <div>
               <button className="add-cart-btn mt-4">Activity Completed</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
