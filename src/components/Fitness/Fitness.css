@@ -2,3 +2,14 @@
     width: 250px;
     height: 250px;
 }  */
+.add-cart-btn {
+  background-color: #5d3fd3;
+  border: none;
+  padding: 8px 70px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: 600;
+}
+.add-cart-btn:hover {
+  background-color: #9999fa;
+}
